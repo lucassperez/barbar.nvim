@@ -330,9 +330,9 @@ local function render(update_names)
         {bufferIndexPrefix,  bufferIndex},
         {iconPrefix,         icon},
         {jumpLetterPrefix,   jumpLetter},
-        {namePrefix,         name},
+        {namePrefix,         ' ' .. (trailingIcon and name or (name .. ' '))},
         {'',                 padding},
-        {'',                 ' '},
+        -- {'',                 ' '},
         {closePrefix,        close},
       }
     }

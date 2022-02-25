@@ -60,7 +60,8 @@ local function calculate_buffers_width(state, base_width)
 
         width = width
           + strwidth(icon or '')
-          + (icon and 1 or 0) -- space-after-close-icon but only if icon is not nil
+          -- + (icon and 1 or 0) -- space-after-close-icon but only if icon is not nil
+          + 1
       end
     end
     sum = sum + width
